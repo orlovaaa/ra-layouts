@@ -5,11 +5,7 @@ export default function CardsView(props) {
 
     return (
         <div className="cards">
-            {cards.map((card, index) => 
-                <ShopCard 
-                    card={card}
-                    key={index}
-                />)}
+            {cards.map((card, index) => <ShopCard card={card} key={index}/>)}
         </div>
     )
 }

@@ -5,11 +5,7 @@ export default function ListView(props) {
 
     return (
         <div className='item-list'>
-            {items.map((item, index) => 
-                <ShopItem 
-                    item={item}
-                    key={index}
-                />)}
+            {items.map((item, index) => <ShopItem item={item} key={index}/>)}
         </div>
     )
 }

@@ -41,10 +41,7 @@ export default function Store() {
 
     return (
         <div className='store'>
-            <IconSwitch 
-                icon={icon}
-                onSwitch={(icon) => setIcon(icon)}
-            />
+            <IconSwitch icon={icon} onSwitch={(icon) => setIcon(icon)}/>
             {icon === "view_list" ? <CardsView cards={products}/> : <ListView items={products}/>}
         </div>
     )
